@@ -81,7 +81,10 @@
         cursor: pointer;
       }
     }
-    input[type="text"] {
+    .filter {
+      display: flex;
+    }
+    input[type="text"], button {
       display: block;
       margin: auto;
       padding: 10px;
@@ -99,6 +102,11 @@
         border-radius: 40px;
         color: $color-3;
       }
+
+      strong {
+        font-size: 15px;
+        color: grey;
+      }
     }
     input[type="range"] {
       width: 20%;
@@ -110,7 +118,7 @@
   
       h5 {
         padding: 4px;
-        border: 1px $color-3 solid;
+        border: 1px $color-2 solid;
         text-align: center;
         width: 180px;
         margin: 0 auto;
@@ -119,7 +127,6 @@
         cursor: pointer;
   
         &:hover {
-          background: $color-1;
           border-color: $color-1;
         }
       }
